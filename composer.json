@@ -1,0 +1,26 @@
+{
+    "name": "nuclear-ant/laravel-snowflake",
+    "description": "Id obfuscation based on Knuth's multiplicative hashing method for Laravel.",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "spatie/laravel-package-tools": "^1.16",
+        "illuminate/console": "^10.0",
+        "illuminate/support": "^10.0",
+        "jenssegers/optimus": "^1.1",
+        "illuminate/database": "^10.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "NuclearAnt\\LaravelSnowflake\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amir Rami",
+            "email": "a.rami@nuclearant.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
