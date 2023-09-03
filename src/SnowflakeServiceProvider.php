@@ -37,7 +37,7 @@ class SnowflakeServiceProvider extends PackageServiceProvider
         Blueprint::macro('snowflake', fn (string $column = 'sid'): ColumnDefinition => $this->unsignedBigInteger($column)->nullable()->index());
 
         $this->app->singleton('optimus', function (Application $app) {
-            $config = $app['config']['snowflake'];
+            $config = $app['config']->get('snowflake');
 
             return new Optimus(
                 prime: $config['prime'],

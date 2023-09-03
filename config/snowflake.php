@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'prime' => 0,
-    'inverse' => 0,
-    'random' => 0,
+    'prime' => 1618124161,
+    'inverse' => 773038721,
+    'random' => 1846853971,
     'size' => 31,
 ];
