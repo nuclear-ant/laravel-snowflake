@@ -10,11 +10,12 @@
     ],
     "require": {
         "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.16",
+        "brick/varexporter": "^0.4.0",
         "illuminate/console": "^10.0",
+        "illuminate/database": "^10.0",
         "illuminate/support": "^10.0",
         "jenssegers/optimus": "^1.1",
-        "illuminate/database": "^10.0"
+        "spatie/laravel-package-tools": "^1.16"
     },
     "license": "MIT",
     "autoload": {
