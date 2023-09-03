@@ -9,7 +9,7 @@ use Jenssegers\Optimus\Exceptions\InvalidPrimeException;
 
 class SparkCommand extends Command
 {
-    protected $signature = 'snowflake:generate {prime} {--bits=31}';
+    protected $signature = 'snowflake:generate {prime?} {--bits=31}';
 
     protected $description = 'Generate constructor values for Optimus prime';
 
