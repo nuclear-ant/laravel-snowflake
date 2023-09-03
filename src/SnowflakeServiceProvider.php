@@ -20,7 +20,7 @@ class SnowflakeServiceProvider extends PackageServiceProvider
             ->hasInstallCommand(fn (InstallCommand $command) => $command
                 ->publishConfigFile()
                 ->endWith(fn (InstallCommand $command) => $command
-                    ->call(SparkCommand::class)
+                    ->call('snowflake:generate')
                 )
             );
     }

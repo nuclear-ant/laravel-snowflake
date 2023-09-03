@@ -32,7 +32,7 @@ class SparkCommand extends Command
 
         try {
             [$prime, $inverse, $random] = Energon::generate($this->argument('prime'), $bitLength);
-        } catch (InvalidPrimeException $e) {
+        } catch (InvalidPrimeException) {
             $this->error('Invalid prime number.');
 
             return static::FAILURE;
