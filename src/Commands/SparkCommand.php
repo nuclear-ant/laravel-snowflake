@@ -47,7 +47,7 @@ class SparkCommand extends Command
             'size' => $bitLength,
         ];
 
-        file_put_contents(config_path('snowflake.php'), sprintf("<?php \n\n return %s", VarExporter::export($config)));
+        file_put_contents(config_path('snowflake.php'), sprintf("<?php \n\nreturn %s;", VarExporter::export($config)));
 
         return static::SUCCESS;
     }
