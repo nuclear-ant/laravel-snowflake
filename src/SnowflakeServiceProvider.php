@@ -1,12 +1,14 @@
 <?php
 
-namespace Spatie\LaravelPackageTools;
+namespace NuclearAnt\LaravelSnowflake;
 
 use Illuminate\Contracts\Foundation\Application;
 use Jenssegers\Optimus\Commands\SparkCommand;
 use Jenssegers\Optimus\Optimus;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Exceptions\InvalidPackage;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class SnowflakeServiceProvider extends PackageServiceProvider
 {
