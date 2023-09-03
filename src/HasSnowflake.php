@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelPackageTools;
+namespace NuclearAnt\LaravelSnowflake;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\LaravelPackageTools\Facades\Snowflake;

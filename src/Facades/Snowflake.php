@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\LaravelPackageTools\Facades;
+namespace NuclearAnt\LaravelSnowflake\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use Jenssegers\Optimus\Optimus;
