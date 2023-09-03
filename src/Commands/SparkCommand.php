@@ -30,6 +30,8 @@ class SparkCommand extends Command
             return static::FAILURE;
         }
 
+        $bitLength = (int) $bitLength;
+
         try {
             [$prime, $inverse, $random] = Energon::generate($this->argument('prime'), $bitLength);
         } catch (InvalidPrimeException) {
