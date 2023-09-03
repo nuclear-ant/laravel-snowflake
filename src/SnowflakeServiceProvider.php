@@ -3,8 +3,8 @@
 namespace NuclearAnt\LaravelSnowflake;
 
 use Illuminate\Contracts\Foundation\Application;
-use Jenssegers\Optimus\Commands\SparkCommand;
 use Jenssegers\Optimus\Optimus;
+use NuclearAnt\LaravelSnowflake\Commands\SparkCommand;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Exceptions\InvalidPackage;
 use Spatie\LaravelPackageTools\Package;
@@ -20,7 +20,7 @@ class SnowflakeServiceProvider extends PackageServiceProvider
             ->hasInstallCommand(fn (InstallCommand $command) => $command
                 ->publishConfigFile()
                 ->endWith(fn (InstallCommand $command) => $command
-                    ->call('snowflake:generate')
+                    ->call(SparkCommand::class)
                 )
             );
     }
